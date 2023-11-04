@@ -1,16 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: nordi
-  title: Nordic
+  name: nordiccc
+  title: Nordiccc
   description: |
     RAM Services is the collection of all the RAM Adaptor Services used to match/export the data to/from Syslore
   links:
     - title: Slack
       url: https://postnord.slack.com/archives/C0193PVDKDM
   annotations:
-    backstage.io/kubernetes-id: 'aro-devtest'
-    backstage.io/kubernetes-namespace: 'default'
+    backstage.io/kubernetes-id: DevOps
+    backstage.io/kubernetes-namespace: backstage-ops-prj
     backstage.io/techdocs-ref: url:https://bitbucket.org/LicenshanteringenPostNord/0641-nordicedi-order-router-services
     argocd/app-name: 'order-event-service-test'
 spec:

@@ -14,7 +14,7 @@ metadata:
     backstage.io/techdocs-ref: url:https://bitbucket.org/LicenshanteringenPostNord/0641-nordicedi-order-router-services
     argocd/app-name: 'order-event-service-test'
 spec:
-  type: service
+  type: website
   system: postnord-idp
   owner: nedi
   lifecycle: development

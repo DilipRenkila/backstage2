@@ -10,7 +10,7 @@ metadata:
       url: https://postnord.slack.com/archives/C0193PVDKDM
   annotations:
     backstage.io/kubernetes-id: DevTest
-    backstage.io/kubernetes-namespace: order-router-services-test-prj
+#    backstage.io/kubernetes-namespace: order-router-services-test-prj
     backstage.io/techdocs-ref: url:https://bitbucket.org/LicenshanteringenPostNord/0641-nordicedi-order-router-services
     argocd/app-name: 'order-event-service-test'
 spec:

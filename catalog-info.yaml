@@ -1,22 +1,18 @@
 apiVersion: backstage.io/v1alpha1
-kind: Service
+kind: Component
 metadata:
-  name: nordiccc
-  title: Nordiccc
-  description: |
-    RAM Services is the collection of all the RAM Adaptor Services used to match/export the data to/from Syslore
-  links:
-    - title: Slack
-      url: https://postnord.slack.com/archives/C0193PVDKDM
   annotations:
-    backstage.io/kubernetes-id: DevTest
-#    backstage.io/kubernetes-namespace: order-router-services-test-prj
-    backstage.io/techdocs-ref: url:https://bitbucket.org/LicenshanteringenPostNord/0641-nordicedi-order-router-services
-    argocd/app-name: 'order-event-service-test'
+    backstage.io/kubernetes-id: redhat-dependency-analytics-plugin
+    bitbucket.com/project-id: 'project-id' #1234. This must be in quotes and can be found under Settings --> General
+  
+    bitbucket.com/project-slug: 'project-slug' # group_name/project_name
+    backstage.io/view-url: https://github.com/jenkinsci/redhat-dependency-analytics-plugin/blob/main/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/jenkinsci/redhat-dependency-analytics-plugin/blob/main/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/jenkinsci/redhat-dependency-analytics-plugin
+    rhda/manifest-file-path: pom.xml
+    backstage.io/techdocs-ref: dir:README.md
+  name: redhat-dependency-analytics-plugin
 spec:
-  type: website
-  system: postnord-idp
-  owner: nedi
-  lifecycle: development
-  dependsOn:
-    - resource:argocd
+  lifecycle: production
+  owner: ecosystem-appeng
+  type: service
